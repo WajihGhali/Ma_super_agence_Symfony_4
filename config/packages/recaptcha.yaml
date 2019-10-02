@@ -1,0 +1,12 @@
+#services:
+#  recaptcha.type:
+#    class: Ghalins\RecaptchaBundle\Type\RecaptchaSubmitType
+#    tags: ['form.type']
+#    arguments:
+#      $key: '6LeIohoUAAAAA0tXJl_WbAwVoPiALqCg3q2JKiKX'
+#recaptcha:
+#  key: '%env(GOOGLE_RECAPTCHA_KEY)%'
+#  secret: '%env(GOOGLE_RECAPTCHA_SECRET)%'
+recaptcha:
+  key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+  secret: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe

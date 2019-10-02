@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Contact;
+use Ghalins\RecaptchaBundle\Type\RecaptchaSubmitType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -22,6 +23,12 @@ class ContactType extends AbstractType
             ->add('phone', TextType::class)
             ->add('email', EmailType::class)
             ->add('message', TextareaType::class)
+            ->add('captcha',RecaptchaSubmitType::class,[
+                'label' => 'Envoyer',
+                'attr' => [
+                    'class'   => 'btn btn-primary'
+                ]
+            ])
         ;
 
     }
