@@ -21,6 +21,13 @@
                 <a class="nav-link {% if current_menu is defined and current_menu == 'properties' %}active{% endif %}"  href="{{ path('property.index') }}">Acheter</a>
             </li>
         </ul>
+        {% if not app.user %}
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{{ path('login') }}" class="nav-link">Se connecter Admin</a>
+                </li>
+            </ul>
+        {% endif %}
         {% if app.user %}
             <ul class="navbar-nav">
                 <li class="nav-item">
