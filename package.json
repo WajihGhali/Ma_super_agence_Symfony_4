@@ -14,7 +14,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "package.json": "^2.0.1",
         "select2": "^4.0.10",
         "yarn": "^1.22.0"
